@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Creative</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Quicksand:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <svg style="display: none;">
+        <symbol id="home">
+            <path d="M8.10329 0.816631C8.47013 0.0734626 9.52987 0.0734625 9.89671 0.816631L11.8576 4.78909C12.0031 5.08394 12.2843 5.2884 12.6096 5.33595L16.9962 5.97712C17.8161 6.09696 18.1429 7.1048 17.5493 7.68296L14.3768 10.773C14.1409 11.0027 14.0333 11.3339 14.0889 11.6584L14.8374 16.0226C14.9775 16.8396 14.12 17.4626 13.3864 17.0767L9.46545 15.0148C9.17407 14.8615 8.82593 14.8615 8.53455 15.0148L4.61363 17.0767C3.88 17.4626 3.02245 16.8396 3.16257 16.0226L3.91109 11.6584C3.96675 11.3339 3.85908 11.0027 3.62321 10.773L0.450678 7.68296C-0.142915 7.1048 0.183869 6.09696 1.00378 5.97712L5.39037 5.33595C5.71572 5.2884 5.99691 5.08394 6.14245 4.78909L8.10329 0.816631Z"/>
+        </symbol>
+        <symbol id="about">
+            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#E2E2E2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 8L16 12L10 16V8Z" stroke="#E2E2E2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+        <symbol id="arrow-right">
+            <path d="M15 18L21 12L15 6" stroke="#E2E2E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3 12H20" stroke="#E2E2E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21 12H20" stroke="#E2E2E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+
+        <symbol id="facebook">
+            <path d="M25 10H22C20.6739 10 19.4021 10.5268 18.4645 11.4645C17.5268 12.4021 17 13.6739 17 15V18H14V22H17V30H21V22H24L25 18H21V15C21 14.7348 21.1054 14.4804 21.2929 14.2929C21.4804 14.1054 21.7348 14 22 14H25V10Z" stroke="#383638" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+        <symbol id="instagram">
+            <path d="M25 9.02539H15C12.2386 9.02539 10 11.264 10 14.0254V24.0254C10 26.7868 12.2386 29.0254 15 29.0254H25C27.7614 29.0254 30 26.7868 30 24.0254V14.0254C30 11.264 27.7614 9.02539 25 9.02539Z" stroke="#383638" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M24 18.3954C24.1234 19.2277 23.9812 20.0777 23.5937 20.8245C23.2062 21.5713 22.5931 22.1769 21.8416 22.5551C21.0901 22.9334 20.2384 23.065 19.4077 22.9314C18.5771 22.7977 17.8097 22.4055 17.2148 21.8106C16.6199 21.2157 16.2277 20.4483 16.094 19.6177C15.9604 18.787 16.092 17.9353 16.4703 17.1838C16.8485 16.4323 17.4541 15.8192 18.2009 15.4317C18.9477 15.0442 19.7977 14.902 20.63 15.0254C21.4789 15.1513 22.2648 15.5469 22.8716 16.1538C23.4785 16.7606 23.8741 17.5465 24 18.3954Z" stroke="#383638" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M25.5 13.5254H25.51" stroke="#383638" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+        <symbol id="pinterest">
+            <path d="M24 15.0254C25.5913 15.0254 27.1174 15.6575 28.2426 16.7828C29.3679 17.908 30 19.4341 30 21.0254V28.0254H26V21.0254C26 20.495 25.7893 19.9863 25.4142 19.6112C25.0391 19.2361 24.5304 19.0254 24 19.0254C23.4696 19.0254 22.9609 19.2361 22.5858 19.6112C22.2107 19.9863 22 20.495 22 21.0254V28.0254H18V21.0254C18 19.4341 18.6321 17.908 19.7574 16.7828C20.8826 15.6575 22.4087 15.0254 24 15.0254V15.0254Z" stroke="#383638" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14 16.0254H10V28.0254H14V16.0254Z" stroke="#383638" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 13.0254C13.1046 13.0254 14 12.13 14 11.0254C14 9.92082 13.1046 9.02539 12 9.02539C10.8954 9.02539 10 9.92082 10 11.0254C10 12.13 10.8954 13.0254 12 13.0254Z" stroke="#383638" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+        <symbol id="email">
+            <path d="M12 11.0254H28C29.1 11.0254 30 11.9254 30 13.0254V25.0254C30 26.1254 29.1 27.0254 28 27.0254H12C10.9 27.0254 10 26.1254 10 25.0254V13.0254C10 11.9254 10.9 11.0254 12 11.0254Z" stroke="#383638" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M30 13.0254L20 20.0254L10 13.0254" stroke="#383638" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 48 49" height="48">
+            <path d="M35 10.0254C34.0424 10.7009 32.9821 11.2175 31.86 11.5554C31.2577 10.8629 30.4573 10.3721 29.567 10.1494C28.6767 9.9266 27.7395 9.98263 26.8821 10.3099C26.0247 10.6371 25.2884 11.2198 24.773 11.9792C24.2575 12.7385 23.9877 13.6378 24 14.5554V15.5554C22.2426 15.601 20.5013 15.2112 18.931 14.4209C17.3607 13.6305 16.0103 12.4641 15 11.0254C15 11.0254 11 20.0254 20 24.0254C17.9405 25.4234 15.4872 26.1244 13 26.0254C22 31.0254 33 26.0254 33 14.5254C32.9991 14.2469 32.9723 13.969 32.92 13.6954C33.9406 12.6889 34.6608 11.4181 35 10.0254V10.0254Z" stroke="#383638" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+    </svg>
+
+    <div class="container">
+        <header class="header">
+            <div class="header__logo">
+                <img src="img/logo.png" alt="" class="header__img">
+            </div>
+            <div class="nav">
+                <a href="" class="nav__link active">Home</a>
+                <a href="" class="nav__link">About</a>
+                <a href="" class="nav__link">Sevices</a>
+                <a href="" class="nav__link">Projects</a>
+            </div>
+            <a href="" class="btn header__contact">Contact us</a>
+        </header>
+    </div>
+
+    <div class="home">
+        <div class="home__title">
+            <p>Make your dream</p>
+            <p>business goal come true</p>
+        </div>
+        <div class="home__text">
+            <p>when you need us for improve your business,</p>
+            <p>then come with us to help your business have reach it, you just sit and feel that goal</p>
+        </div>
+        <a href="" class="btn light home__btn">Start Project</a>
+        <div class="home__ph">
+            <div class="home__project">
+                <svg class="home__icon"><use xlink:href="#home"></use></svg>
+                <div class="home__project-title">Great Project</div>
+                <div class="home__project-text">800+ Done</div>
+            </div>
+            <div class="home__review">
+                <div class="home__review-info">
+                    <img src="img/review.png" alt="" class="home__review-img">
+                    <div class="home__review-info-text">
+                        <div class="home__review-name">Bill Adams</div>
+                        <div class="home__review-prof">CEO UpTech</div>
+                    </div>
+                </div>
+                <div class="home__review-text">“ This team is really the best in its field,I don't regret working with them, and will come back again thanks “</div>
+            </div>
+            <img src="img/home.png" alt="" class="home__img">
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="container">
+            <div class="about__suptitle">About Us</div>
+            <div class="about__title">Our Teammate</div>
+            <div class="about__inner">
+                <img src="img/about.png" alt="" class="about__img">
+                <div class="about__text">
+                    <p>We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business</p>
+                    <p>We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business</p>
+                    <a href="" class="btn light about__btn-1" style="margin-right: 25px;">About Us</a>
+                    <div>
+                        <svg class="about__svg"><use xlink:href="#about"></use></svg><a href="" class="btn about__btn">Our Story</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="services">
+            <div class="services__block">
+                <div class="block__inner">
+                    <div class="services__suptitle">Our Services</div>
+                    <div class="services__title">Perfect and Fast Movement</div>
+                    <div class="services__text">We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business</div>
+                    <a href="" class="services__btn">Read more <svg class="services__icon"><use xlink:href="#arrow-right"></use></svg></a>
+                </div>
+            </div>
+            <div class="services__block">
+                <div class="services__items">
+                    <div class="services__item" style="margin-right: 41px;">
+                        <img style="margin-bottom: 32px;" src="img/services/1.png" alt="">
+                        <div class="services__item-text">Social Media Management</div>
+                    </div>
+                    <div class="services__item">
+                        <img style="margin-bottom: 32px;" src="img/services/2.png" alt="">
+                        <div class="services__item-text">Search Engine Opimization</div>
+                    </div>
+                </div>
+                <div class="services__items">                    
+                    <div class="services__item" style="margin-right: 41px;">
+                        <img style="margin-bottom: 32px;" src="img/services/3.png" alt="">
+                        <div class="services__item-text">Design</div>
+                    </div>
+                    <div class="services__item">
+                        <img style="margin-bottom: 32px;" src="img/services/4.png" alt="">
+                        <div class="services__item-text">Ads</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio">
+        <div class="portfolio__suptitle">Our Portfolio</div>
+        <div class="portfolio__title">What do we do</div>
+        <div class="portfolio__text">all projects that we have already done, proven can help to use more comfortable, then can used by client from our business</div>
+        <div class="container">
+            <div class="portfolio__items">
+                <div class="portfolio__item">
+                    <img src="img/portfolio/1.png" alt="" class="portfolio__img">
+                </div>
+                <div class="portfolio__item">
+                    <img src="img/portfolio/2.png" alt="" class="portfolio__img">
+                </div>
+                <div class="portfolio__item">
+                    <img src="img/portfolio/3.png" alt="" class="portfolio__img">
+                </div>
+            </div>
+        </div>
+        <div class="portfolio__btn">
+            <a href="" class="btn">See All Portfolio</a>
+        </div>
+    </div>
+
+    <div class="review">
+        <div class="container">
+            <div class="review__suptitle">Testimonial</div>
+            <div class="review__title">People Talk about us</div>
+            <div class="review__items">
+                <div class="review__item">
+                    <div class="review__info">
+                        <img src="img/review-2.png" alt="">
+                        <div class="review__info-text">
+                            <div class="review__name">Angel Rose</div>
+                            <div class="review__prof">Creative Manager</div>
+                        </div>
+                    </div>
+                    <div class="review__text">There are many variations passages of Lorem Ipsum majority some by words which don't look.</div>
+                </div>
+                <div class="review__item">
+                    <div class="review__info">
+                        <img src="img/review-2.png" alt="">
+                        <div class="review__info-text">
+                            <div class="review__name">Angel Rose</div>
+                            <div class="review__prof">Creative Manager</div>
+                        </div>
+                    </div>
+                    <div class="review__text">There are many variations passages of Lorem Ipsum majority some by words which don't look.</div>
+                </div>
+                <div class="review__item">
+                    <div class="review__info">
+                        <img src="img/review-2.png" alt="">
+                        <div class="review__info-text">
+                            <div class="review__name">Angel Rose</div>
+                            <div class="review__prof">Creative Manager</div>
+                        </div>
+                    </div>
+                    <div class="review__text">There are many variations passages of Lorem Ipsum majority some by words which don't look.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="container">
+            <div class="contact__inner">
+                <div class="contact__content">
+                    <div class="contact__title">Interesting Collaboration With Us?</div>
+                    <div class="contact__text">Help you to reach your business goal</div>
+                    <a href="" class="btn light contact__btn">Get Started</a>
+                </div>
+                <div class="contact__imgs">
+                    <img src="img/contact/1.png" alt="" class="contact__img-1">
+                    <img src="img/contact/2.png" alt="" class="contact__img-2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__logo">
+                    <img src="img/logo-2.png" alt="">
+                </div>
+                <div class="footer__block">
+                    <div class="footer__title">Terms & policies</div>
+                    <a href="" class="footer__link">Terms of Service</a>
+                    <a href="" class="footer__link">Privacy Policy</adiv>
+                </div>
+                <div class="footer__block">
+                    <div class="footer__title">Company</div>
+                    <a href="" class="footer__link">Home</a>
+                    <a href="" class="footer__link">About Us</a>
+                    <a href="" class="footer__link">Contact Us</a>
+                </div>
+                <div class="footer__block">
+                    <div class="footer__title">Contact</div>
+                    <a href="" class="footer__link">(+62) 893912392190</a>
+                    <a href="" class="footer__link">agecnycr@gmail.com</a>
+                </div>
+                <div class="footer__block">
+                    <div class="footer__title">Location</div>
+                    <a href="" class="footer__link">PT Osiris Real Estate Internasional</a>
+                    <a href="" class="footer__link">Jl. KH. Wahid Hasyim Kel No.10D</a>
+                    <a href="" class="footer__link">Jakarta, Indonesia</a>
+                    <a href="" class="footer__link">team@OsirisRealEstate.com</a>
+                </div>
+            </div>
+            <div class="footer__links">
+                <a href="">
+                    <svg class="footer__soc"><use xlink:href="#facebook"></use></svg>
+                </a>
+                <a href="">
+                    <svg class="footer__soc"><use xlink:href="#instagram"></use></svg>
+                </a>
+                <a href="">
+                    <svg class="footer__soc"><use xlink:href="#pinterest"></use></svg>
+                </a>
+                <a href="">
+                    <svg class="footer__soc"><use xlink:href="#email"></use></svg>
+                </a>
+                <a href="" style="margin-right: -40px;">
+                    <svg class="footer__soc"><use xlink:href="#twitter"></use></svg>
+                </a>
+            </div>
+            <div class="footer__text">Copyright @ 2022 Agency Creative. All Right Reserved</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
